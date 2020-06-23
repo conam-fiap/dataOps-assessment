@@ -9,35 +9,6 @@ Tabelas:
 	PersonPhone			-	Armazena o número e o tipo do telefone da pessoa.
 	PhoneNumberType			-	Tabela que armazena o tipo do telefone da pessoa.
 	Address				-	Endereço das pessoas (fornecedores, empregados, clientes).
-	AddressType			-	Tipos de endereços da tabela Address.
+	AddressType			-	Tipos de endereços da tabela Address (Endereço de cobrança, entrega etc).
 	BusinessEntityAddress		-	
 	Vendor				-	Armazena todas as informações dos fornecedores da companhia Adventure Works.
-
--- Consultando dicionário de dados para obter informações adicionais sobre as tabelas.
-SELECT
-	table_name,
-	table_comment
-FROM 
-	information_schema.TABLES t 
-WHERE
-	TABLE_SCHEMA = 'AdventureWorks2014'
-AND
-	TABLE_NAME IN 
-	(
-	'BusinessEntity',
-	'BusinessEntityContact',
-	'Customer',
-	'ContactType',
-	'Person',
-	'Employee',
-	'Password',
-	'EmailAddress',
-	'PersonPhone',
-	'PhoneNumberType',
-	'Address',
-	'AddressType',
-	'BusinessEntityAddress',
-	'Vendor'
-	);
-
-
