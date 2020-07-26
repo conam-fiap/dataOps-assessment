@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_dYfJUMxOEeqfHv4ujm0LKQ" name="AdventureWorks2014_SQLSERVER" id="_2yMZAMxNEeqfHv4ujm0LKQ" label="AdventureWorks2014_SQLSERVER" dataPackage="_dbbvoMxOEeqfHv4ujm0LKQ" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://DESKTOP-RVEH93Q:52890/AdventureWorks2014;integratedSecurity=true" dbVersionString="JTDS" Port="52890" Username="" Password="" ServerName="DESKTOP-RVEH93Q" DatasourceName="" FileFieldName="" SID="AdventureWorks2014" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="integratedSecurity=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_dYfJUcxOEeqfHv4ujm0LKQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_dY9DYMxOEeqfHv4ujm0LKQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_dZBU0MxOEeqfHv4ujm0LKQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_dZBU0cxOEeqfHv4ujm0LKQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_dZBU0sxOEeqfHv4ujm0LKQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_dZBU08xOEeqfHv4ujm0LKQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_dZBU1MxOEeqfHv4ujm0LKQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_dZBU1cxOEeqfHv4ujm0LKQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_dZkucMxOEeqfHv4ujm0LKQ" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_dZkuccxOEeqfHv4ujm0LKQ" tag="DB ProductVersion" value="14.00.1000"/>
+    <taggedValue xmi:id="_dZkucsxOEeqfHv4ujm0LKQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_dbbvoMxOEeqfHv4ujm0LKQ" name="AdventureWorks2014" dataManager="_dYfJUMxOEeqfHv4ujm0LKQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvocxOEeqfHv4ujm0LKQ" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvosxOEeqfHv4ujm0LKQ" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvo8xOEeqfHv4ujm0LKQ" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvpMxOEeqfHv4ujm0LKQ" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvpcxOEeqfHv4ujm0LKQ" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvpsxOEeqfHv4ujm0LKQ" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvp8xOEeqfHv4ujm0LKQ" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvqMxOEeqfHv4ujm0LKQ" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvqcxOEeqfHv4ujm0LKQ" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvqsxOEeqfHv4ujm0LKQ" name="dbo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvq8xOEeqfHv4ujm0LKQ" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvrMxOEeqfHv4ujm0LKQ" name="HumanResources"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvrcxOEeqfHv4ujm0LKQ" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvrsxOEeqfHv4ujm0LKQ" name="Person"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvr8xOEeqfHv4ujm0LKQ" name="Production"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvsMxOEeqfHv4ujm0LKQ" name="Purchasing"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvscxOEeqfHv4ujm0LKQ" name="Sales"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_dbbvssxOEeqfHv4ujm0LKQ" name="sys"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
