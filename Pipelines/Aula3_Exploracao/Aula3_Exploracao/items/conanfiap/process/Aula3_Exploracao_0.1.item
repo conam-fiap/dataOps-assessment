@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="directoryPath" prompt="directoryPath?" promptNeeded="false" type="id_String" value="C:\Talend\9ABD_Conan\Relatorios\Aula3_Exploracao"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:1zlWhyVy//CuN0Tg0LWn2PSxLxJao7y//cZOzDHI" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/jcerqueira/Documents/Talend/TOS_BD-20200219_1130-V7.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zLnDGwHQvje+j79DS/0y6uDXdQ6LmvnuDdtSL6/h" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_MDXHQLWqEeqfFcZxVkJLPA" name="DataOperation"/>
+    <routinesParameter id="_ME3jILWqEeqfFcZxVkJLPA" name="Mathematical"/>
+    <routinesParameter id="_ME-34LWqEeqfFcZxVkJLPA" name="Numeric"/>
+    <routinesParameter id="_MFFlkLWqEeqfFcZxVkJLPA" name="Relational"/>
+    <routinesParameter id="_MFM6ULWqEeqfFcZxVkJLPA" name="StringHandling"/>
+    <routinesParameter id="_MFToALWqEeqfFcZxVkJLPA" name="TalendDataGenerator"/>
+    <routinesParameter id="_MFa8wLWqEeqfFcZxVkJLPA" name="TalendDate"/>
+    <routinesParameter id="_MFmi8LWqEeqfFcZxVkJLPA" name="TalendStringUtil"/>
+    <routinesParameter id="_MFhDYLWqEeqfFcZxVkJLPA" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PEVsOHEeHk7vML+ZOzmdSzXsmGE7lPT66lPxpMmf" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#x9;PERCENT_RANK() &#xD;&#xA;&#x9;OVER (&#xD;&#xA;&#x9;&#x9;&#x9;ORDER BY SalesOrderDetailID&#xD;&#xA;&#x9;) PercRNK,&#xD;&#xA;&#x9;a.*,&#xD;&#xA;&#x9;b.SalesOrderDetailID,&#xD;&#xA;&#x9;b.CarrierTrackingNumber,&#xD;&#xA;&#x9;b.OrderQty,&#xD;&#xA;&#x9;b.ProductID,&#xD;&#xA;&#x9;b.SpecialOfferID,&#xD;&#xA;&#x9;b.UnitPrice,&#xD;&#xA;&#x9;b.UnitPriceDiscount,&#xD;&#xA;&#x9;b.LineTotal&#xD;&#xA;FROM&#xD;&#xA;&#x9;Sales.SalesOrderHeader a&#xD;&#xA;INNER JOIN&#xD;&#xA;&#x9;Sales.SalesOrderDetail b&#xD;&#xA;&#x9;ON a.SalesOrderID = b.SalesOrderID&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="PercRNK"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RevisionNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrderDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DueDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OnlineOrderFlag"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PurchaseOrderNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesPersonID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TerritoryID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BillToAddressID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipToAddressID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ShipMethodID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreditCardID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreditCardApprovalCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CurrencyRateID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SubTotal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TaxAmt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Freight"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TotalDue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Comment"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rowguid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesOrderDetailID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CarrierTrackingNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OrderQty"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SpecialOfferID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UnitPrice"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UnitPriceDiscount"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LineTotal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Vendas"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_4">
+      <column comment="" defaultValue="" key="false" length="15" name="PercRNK" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="OrderDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DueDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ShipDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Status" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="AccountNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="BillToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ShipToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ShipMethodID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CreditCardID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CurrencyRateID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SubTotal" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Freight" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="TotalDue" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="Comment" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="36" name="rowguid" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ModifiedDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="SalesOrderDetailID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="CarrierTrackingNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="OrderQty" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ProductID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="SpecialOfferID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="UnitPrice" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="UnitPriceDiscount" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="LineTotal" nullable="false" pattern="" precision="6" sourceType="NUMERIC" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="LINE"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_1p7mEMxxEeqfHv4ujm0LKQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out_DataExploration">
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_OrderDate" nullable="false" pattern="" precision="0" sourceType="TIMESTAMP" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_DueDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_ShipDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_Status" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Sales_OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Sales_PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Sales_AccountNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_BillToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipMethodID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CreditCardID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Sales_CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CurrencyRateID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_SubTotal" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TaxAmt" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_Freight" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TotalDue" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="Sales_Comment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_CarrierTrackingNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Sales_OrderQty" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ProductID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_SpecialOfferID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPriceDiscount" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Sales_LineTotal" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesQuota" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Bonus" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CommissionPct" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesYTD" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesLastYear" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SP_PersonType" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_FirstName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_MiddleName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_LastName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="SP_Suffix" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_EmailPromotion" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_AdditionalContactInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_Demographics" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Product_Number" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_MakeFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_FinishedGoodsFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Product_Color" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_SafetyStockLevel" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_ReorderPoint" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_StandardCost" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_ListPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Product_Size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SizeUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Product_Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_WeightUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Product_DaysToManufacture" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Line" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Class" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Style" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellStartDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellEndDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_DiscontinuedDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SubCategory" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Category" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Model" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualSales" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualRevenue" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_BankName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Store_BusinessType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_YearOpened" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Specialty" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_SquareFeet" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Brands" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Internet" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_NumberEmployees" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_AddressType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_City" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_StateProvinceName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Store_PostalCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_CountryRegionName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PercRNK" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out_DataExploration">
+        <mapperTableEntries name="SalesOrderID" expression="row1.SalesOrderID " type="id_Integer"/>
+        <mapperTableEntries name="Sales_RevisionNumber" expression="row1.RevisionNumber " type="id_Short"/>
+        <mapperTableEntries name="Sales_OrderDate" expression="row1.OrderDate " type="id_Date"/>
+        <mapperTableEntries name="Sales_DueDate" expression="row1.DueDate " type="id_Date"/>
+        <mapperTableEntries name="Sales_ShipDate" expression="row1.ShipDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Sales_Status" expression="row1.Status " type="id_Short"/>
+        <mapperTableEntries name="Sales_OnlineOrderFlag" expression="row1.OnlineOrderFlag " type="id_Boolean"/>
+        <mapperTableEntries name="Sales_SalesOrderNumber" expression="row1.SalesOrderNumber " type="id_String"/>
+        <mapperTableEntries name="Sales_PurchaseOrderNumber" expression="row1.PurchaseOrderNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Sales_AccountNumber" expression="row1.AccountNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Sales_CustomerID" expression="row1.CustomerID " type="id_Integer"/>
+        <mapperTableEntries name="SalesPersonID" expression="row1.SalesPersonID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Sales_TerritoryID" expression="row1.TerritoryID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Sales_BillToAddressID" expression="row1.BillToAddressID " type="id_Integer"/>
+        <mapperTableEntries name="Sales_ShipToAddressID" expression="row1.ShipToAddressID " type="id_Integer"/>
+        <mapperTableEntries name="Sales_ShipMethodID" expression="row1.ShipMethodID " type="id_Integer"/>
+        <mapperTableEntries name="Sales_CreditCardID" expression="row1.CreditCardID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Sales_CreditCardApprovalCode" expression="row1.CreditCardApprovalCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Sales_CurrencyRateID" expression="row1.CurrencyRateID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Sales_SubTotal" expression="row1.SubTotal " type="id_Double"/>
+        <mapperTableEntries name="Sales_TaxAmt" expression="row1.TaxAmt " type="id_Double"/>
+        <mapperTableEntries name="Sales_Freight" expression="row1.Freight " type="id_Double"/>
+        <mapperTableEntries name="Sales_TotalDue" expression="row1.TotalDue " type="id_Double"/>
+        <mapperTableEntries name="Sales_Comment" expression="row1.Comment " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SalesOrderDetailID" expression="row1.SalesOrderDetailID " type="id_Integer"/>
+        <mapperTableEntries name="Sales_CarrierTrackingNumber" expression="row1.CarrierTrackingNumber " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Sales_OrderQty" expression="row1.OrderQty " type="id_Short"/>
+        <mapperTableEntries name="Sales_ProductID" expression="row1.ProductID " type="id_Integer"/>
+        <mapperTableEntries name="Sales_SpecialOfferID" expression="row1.SpecialOfferID " type="id_Integer"/>
+        <mapperTableEntries name="Sales_UnitPrice" expression="row1.UnitPrice " type="id_Double"/>
+        <mapperTableEntries name="Sales_UnitPriceDiscount" expression="row1.UnitPriceDiscount " type="id_Double"/>
+        <mapperTableEntries name="Sales_LineTotal" expression="row1.LineTotal " type="id_Double"/>
+        <mapperTableEntries name="SP_TerritoryID" expression="row4.TerritoryID " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SalesQuota" expression="row4.SalesQuota " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Bonus" expression="row4.Bonus " type="id_Double"/>
+        <mapperTableEntries name="CommissionPct" expression="row4.CommissionPct " type="id_Double"/>
+        <mapperTableEntries name="SalesYTD" expression="row4.SalesYTD " type="id_Double"/>
+        <mapperTableEntries name="SalesLastYear" expression="row4.SalesLastYear " type="id_Double"/>
+        <mapperTableEntries name="SP_PersonType" expression="row4.PersonType " type="id_String"/>
+        <mapperTableEntries name="SP_FirstName" expression="row4.FirstName " type="id_String"/>
+        <mapperTableEntries name="SP_MiddleName" expression="row4.MiddleName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SP_LastName" expression="row4.LastName " type="id_String"/>
+        <mapperTableEntries name="SP_Suffix" expression="row4.Suffix " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SP_EmailPromotion" expression="row4.EmailPromotion " type="id_Integer"/>
+        <mapperTableEntries name="SP_AdditionalContactInfo" expression="row4.AdditionalContactInfo " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SP_Demographics" expression="row4.Demographics " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_Name" expression="row3.Name " type="id_String"/>
+        <mapperTableEntries name="Product_Number" expression="row3.ProductNumber " type="id_String"/>
+        <mapperTableEntries name="Product_MakeFlag" expression="row3.MakeFlag " type="id_Boolean"/>
+        <mapperTableEntries name="Product_FinishedGoodsFlag" expression="row3.FinishedGoodsFlag " type="id_Boolean"/>
+        <mapperTableEntries name="Product_Color" expression="row3.Color " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_SafetyStockLevel" expression="row3.SafetyStockLevel " type="id_Short"/>
+        <mapperTableEntries name="Product_ReorderPoint" expression="row3.ReorderPoint " type="id_Short"/>
+        <mapperTableEntries name="Product_StandardCost" expression="row3.StandardCost " type="id_Double"/>
+        <mapperTableEntries name="Product_ListPrice" expression="row3.ListPrice " type="id_Double"/>
+        <mapperTableEntries name="Product_Size" expression="row3.Size " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_SizeUnitMeasureName" expression="row3.SizeUnitMeasureName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_Weight" expression="row3.Weight " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Product_WeightUnitMeasureName" expression="row3.WeightUnitMeasureName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_DaysToManufacture" expression="row3.DaysToManufacture " type="id_Integer"/>
+        <mapperTableEntries name="Product_Line" expression="row3.ProductLine " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_Class" expression="row3._Class " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_Style" expression="row3.Style " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_SellStartDate" expression="row3.SellStartDate " type="id_Date"/>
+        <mapperTableEntries name="Product_SellEndDate" expression="row3.SellEndDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Product_DiscontinuedDate" expression="row3.DiscontinuedDate " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Product_SubCategory" expression="row3.ProductSubCategory " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_Category" expression="row3.ProductCategory " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Product_Model" expression="row3.ProductModel " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_Name" expression="row2.Name " type="id_String"/>
+        <mapperTableEntries name="Store_AnnualSales" expression="row2.AnnualSales " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Store_AnnualRevenue" expression="row2.AnnualRevenue " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Store_BankName" expression="row2.BankName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_BusinessType" expression="row2.BusinessType " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_YearOpened" expression="row2.YearOpened " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Store_Specialty" expression="row2.Specialty " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_SquareFeet" expression="row2.SquareFeet " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Store_Brands" expression="row2.Brands " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_Internet" expression="row2.Internet " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_NumberEmployees" expression="row2.NumberEmployees " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Store_AddressType" expression="row2.AddressType " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_AddressLine1" expression="row2.AddressLine1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_AddressLine2" expression="row2.AddressLine2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_City" expression="row2.City " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_StateProvinceName" expression="row2.StateProvinceName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_PostalCode" expression="row2.PostalCode " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Store_CountryRegionName" expression="row2.CountryRegionName " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PercRNK" expression="row1.PercRNK " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="PercRNK" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="SalesOrderID" type="id_Integer"/>
+        <mapperTableEntries name="RevisionNumber" type="id_Short"/>
+        <mapperTableEntries name="OrderDate" type="id_Date"/>
+        <mapperTableEntries name="DueDate" type="id_Date"/>
+        <mapperTableEntries name="ShipDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Status" type="id_Short"/>
+        <mapperTableEntries name="OnlineOrderFlag" type="id_Boolean"/>
+        <mapperTableEntries name="SalesOrderNumber" type="id_String"/>
+        <mapperTableEntries name="PurchaseOrderNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AccountNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CustomerID" type="id_Integer"/>
+        <mapperTableEntries name="SalesPersonID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="TerritoryID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="BillToAddressID" type="id_Integer"/>
+        <mapperTableEntries name="ShipToAddressID" type="id_Integer"/>
+        <mapperTableEntries name="ShipMethodID" type="id_Integer"/>
+        <mapperTableEntries name="CreditCardID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CreditCardApprovalCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CurrencyRateID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SubTotal" type="id_Double"/>
+        <mapperTableEntries name="TaxAmt" type="id_Double"/>
+        <mapperTableEntries name="Freight" type="id_Double"/>
+        <mapperTableEntries name="TotalDue" type="id_Double"/>
+        <mapperTableEntries name="Comment" type="id_String" nullable="true"/>
+        <mapperTableEntries name="rowguid" type="id_Object"/>
+        <mapperTableEntries name="ModifiedDate" type="id_Date"/>
+        <mapperTableEntries name="SalesOrderDetailID" type="id_Integer"/>
+        <mapperTableEntries name="CarrierTrackingNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="OrderQty" type="id_Short"/>
+        <mapperTableEntries name="ProductID" type="id_Integer"/>
+        <mapperTableEntries name="SpecialOfferID" type="id_Integer"/>
+        <mapperTableEntries name="UnitPrice" type="id_Double"/>
+        <mapperTableEntries name="UnitPriceDiscount" type="id_Double"/>
+        <mapperTableEntries name="LineTotal" type="id_Double"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SalesPersonID" expression="row1.SalesPersonID " type="id_Integer" operator="="/>
+        <mapperTableEntries name="TerritoryID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SalesQuota" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Bonus" type="id_Double"/>
+        <mapperTableEntries name="CommissionPct" type="id_Double"/>
+        <mapperTableEntries name="SalesYTD" type="id_Double"/>
+        <mapperTableEntries name="SalesLastYear" type="id_Double"/>
+        <mapperTableEntries name="PersonType" type="id_String"/>
+        <mapperTableEntries name="FirstName" type="id_String"/>
+        <mapperTableEntries name="MiddleName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LastName" type="id_String"/>
+        <mapperTableEntries name="Suffix" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EmailPromotion" type="id_Integer"/>
+        <mapperTableEntries name="AdditionalContactInfo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Demographics" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ProductID" expression="row1.ProductID " type="id_Integer" operator="="/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="ProductNumber" type="id_String"/>
+        <mapperTableEntries name="MakeFlag" type="id_Boolean"/>
+        <mapperTableEntries name="FinishedGoodsFlag" type="id_Boolean"/>
+        <mapperTableEntries name="Color" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SafetyStockLevel" type="id_Short"/>
+        <mapperTableEntries name="ReorderPoint" type="id_Short"/>
+        <mapperTableEntries name="StandardCost" type="id_Double"/>
+        <mapperTableEntries name="ListPrice" type="id_Double"/>
+        <mapperTableEntries name="Size" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SizeUnitMeasureCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WeightUnitMeasureCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Weight" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="DaysToManufacture" type="id_Integer"/>
+        <mapperTableEntries name="ProductLine" type="id_String" nullable="true"/>
+        <mapperTableEntries name="_Class" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Style" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ProductSubcategoryID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="ProductModelID" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SellStartDate" type="id_Date"/>
+        <mapperTableEntries name="SellEndDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DiscontinuedDate" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="rowguid" type="id_Object"/>
+        <mapperTableEntries name="ModifiedDate" type="id_Date"/>
+        <mapperTableEntries name="ProductSubCategory" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ProductCategory" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ProductModel" type="id_String" nullable="true"/>
+        <mapperTableEntries name="WeightUnitMeasureName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SizeUnitMeasureName" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="BusinessEntityID" type="id_Integer"/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="AnnualSales" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="AnnualRevenue" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="BankName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="BusinessType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="YearOpened" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Specialty" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SquareFeet" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Brands" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Internet" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NumberEmployees" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AddressType" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AddressLine1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AddressLine2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="City" type="id_String" nullable="true"/>
+        <mapperTableEntries name="StateProvinceName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PostalCode" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CountryRegionName" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SalesPersonID" expression="row1.SalesPersonID " type="id_Integer" nullable="true" operator="="/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Bg7bphoKCrwS0AFEIs3ybt8UO5JhD0hakogRrWkW" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;a.*,&#xD;&#xA;&#x9;b.Name AS ProductSubCategory,&#xD;&#xA;&#x9;c.Name AS ProductCategory,&#xD;&#xA;&#x9;d.Name AS ProductModel,&#xD;&#xA;&#x9;e.Name AS WeightUnitMeasureName,&#xD;&#xA;&#x9;f.Name AS SizeUnitMeasureName&#xD;&#xA;FROM&#xD;&#xA;&#x9;Production.Product a&#xD;&#xA;LEFT JOIN&#xD;&#xA;&#x9;Production.ProductSubcategory b&#xD;&#xA;&#x9;ON a.ProductSubcategoryID = b.ProductSubcategoryID &#xD;&#xA;LEFT JOIN &#xD;&#xA;&#x9;Production.ProductCategory c&#xD;&#xA;&#x9;ON b.ProductCategoryID = c.ProductCategoryID &#xD;&#xA;LEFT JOIN &#xD;&#xA;&#x9;Production.ProductModel d&#xD;&#xA;&#x9;ON a.ProductModelID = d.ProductModelID &#xD;&#xA;LEFT JOIN &#xD;&#xA;&#x9;Production.UnitMeasure e&#xD;&#xA;&#x9;ON a.WeightUnitMeasureCode = e.UnitMeasureCode &#xD;&#xA;LEFT JOIN &#xD;&#xA;&#x9;Production.UnitMeasure f &#xD;&#xA;&#x9;ON a.SizeUnitMeasureCode = f.UnitMeasureCode &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MakeFlag"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FinishedGoodsFlag"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Color"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SafetyStockLevel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ReorderPoint"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StandardCost"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ListPrice"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Size"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SizeUnitMeasureCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WeightUnitMeasureCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Weight"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DaysToManufacture"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductLine"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_Class"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Style"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductSubcategoryID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductModelID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SellStartDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SellEndDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DiscontinuedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rowguid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ModifiedDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductSubCategory"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCategory"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductModel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WeightUnitMeasureName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SizeUnitMeasureName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Produtos"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" defaultValue="" key="false" length="10" name="ProductID" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="ProductNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="MakeFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="FinishedGoodsFlag" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Color" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="SafetyStockLevel" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="ReorderPoint" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="StandardCost" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="ListPrice" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Size" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="SizeUnitMeasureCode" nullable="true" pattern="" precision="0" sourceType="NCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="WeightUnitMeasureCode" nullable="true" pattern="" precision="0" sourceType="NCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="DaysToManufacture" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="ProductLine" nullable="true" pattern="" precision="0" sourceType="NCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="_Class" nullable="true" originalDbColumnName="Class" pattern="" precision="0" sourceType="NCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Style" nullable="true" pattern="" precision="0" sourceType="NCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ProductSubcategoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="ProductModelID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellStartDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="SellEndDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="DiscontinuedDate" nullable="true" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="36" name="rowguid" nullable="false" pattern="" precision="0" sourceType="UNIQUEIDENTIFIER" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="ModifiedDate" nullable="false" pattern="" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ProductSubCategory" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ProductCategory" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ProductModel" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="WeightUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="SizeUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Fq5QOtyNOjIbGohlBpYgweD5c7eLAiCqNL0Wq61M" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;&#x9;a.BusinessEntityID SalesPersonID,&#xD;&#xA;&#x9;a.TerritoryID,&#xD;&#xA;&#x9;a.SalesQuota,&#xD;&#xA;&#x9;a.Bonus,&#xD;&#xA;&#x9;a.CommissionPct,&#xD;&#xA;&#x9;a.SalesYTD,&#xD;&#xA;&#x9;a.SalesLastYear,&#xD;&#xA;&#x9;b.PersonType,&#xD;&#xA;&#x9;b.FirstName,&#xD;&#xA;&#x9;b.MiddleName,&#xD;&#xA;&#x9;b.LastName,&#xD;&#xA;&#x9;b.Suffix,&#xD;&#xA;&#x9;b.EmailPromotion,&#xD;&#xA;&#x9;b.AdditionalContactInfo,&#xD;&#xA;&#x9;b.Demographics&#xD;&#xA;FROM&#xD;&#xA;&#x9;Sales.SalesPerson a &#xD;&#xA;INNER JOIN&#xD;&#xA;&#x9;Person.Person b&#xD;&#xA;&#x9;ON a.BusinessEntityID = b.BusinessEntityID&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesPersonID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TerritoryID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesQuota"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bonus"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CommissionPct"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesYTD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesLastYear"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PersonType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Suffix"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmailPromotion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AdditionalContactInfo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Demographics"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Vendedores"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="10" name="SalesPersonID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesQuota" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Bonus" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CommissionPct" nullable="false" pattern="" precision="4" sourceType="SMALLMONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesYTD" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesLastYear" nullable="false" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PersonType" nullable="false" pattern="" precision="0" sourceType="NCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="FirstName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="MiddleName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="LastName" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Suffix" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="EmailPromotion" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="AdditionalContactInfo" nullable="true" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1073741823" name="Demographics" nullable="true" pattern="" precision="0" sourceType="NTEXT" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kGacrHMZzDfsZD9MX4OVL3MB0CfgIJsaoJte4W3y" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;&#x9;a.BusinessEntityID&#xD;&#xA;&#x9;,a.Name&#xD;&#xA;&#x9;,a.AnnualSales&#xD;&#xA;&#x9;,a.AnnualRevenue&#xD;&#xA;&#x9;,a.BankName&#xD;&#xA;&#x9;,a.BusinessType&#xD;&#xA;&#x9;,a.YearOpened&#xD;&#xA;&#x9;,a.Specialty&#xD;&#xA;&#x9;,a.SquareFeet&#xD;&#xA;&#x9;,a.Brands&#xD;&#xA;&#x9;,a.Internet&#xD;&#xA;&#x9;,a.NumberEmployees&#xD;&#xA;&#x9;,b.AddressType&#xD;&#xA;&#x9;,b.AddressLine1&#xD;&#xA;&#x9;,b.AddressLine2&#xD;&#xA;&#x9;,b.City&#xD;&#xA;&#x9;,b.StateProvinceName&#xD;&#xA;&#x9;,b.PostalCode&#xD;&#xA;&#x9;,b.CountryRegionName&#xD;&#xA;&#x9;,c.SalesPersonID&#xD;&#xA;FROM &#xD;&#xA;&#x9;[Sales].[vStoreWithDemographics] a&#xD;&#xA;LEFT JOIN&#xD;&#xA;&#x9;[Sales].[vStoreWithAddresses] b &#xD;&#xA;&#x9;ON a.BusinessEntityID = b.BusinessEntityID&#xD;&#xA;LEFT JOIN&#xD;&#xA;&#x9;[Sales].[Store] c&#xD;&#xA;&#x9;ON a.BusinessEntityID = c.BusinessEntityID&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="BusinessEntityID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AnnualSales"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AnnualRevenue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BankName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BusinessType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YearOpened"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Specialty"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SquareFeet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brands"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Internet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumberEmployees"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddressLine2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="StateProvinceName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PostalCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CountryRegionName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SalesPersonID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="Lojas"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_3">
+      <column comment="" defaultValue="" key="false" length="10" name="BusinessEntityID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="AnnualSales" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="AnnualRevenue" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="BankName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="BusinessType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="YearOpened" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Specialty" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="SquareFeet" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Brands" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Internet" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="NumberEmployees" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="AddressType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="City" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="StateProvinceName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="PostalCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="CountryRegionName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="PercRNK"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="&lt;"/>
+      <elementValue elementRef="RVALUE" value="0.8"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DivideBase"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFilterRow_1">
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_OrderDate" nullable="false" pattern="" precision="0" sourceType="TIMESTAMP" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_DueDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_ShipDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_Status" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Sales_OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Sales_PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Sales_AccountNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_BillToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipMethodID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CreditCardID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Sales_CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CurrencyRateID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_SubTotal" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TaxAmt" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_Freight" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TotalDue" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="Sales_Comment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_CarrierTrackingNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Sales_OrderQty" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ProductID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_SpecialOfferID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPriceDiscount" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Sales_LineTotal" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesQuota" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Bonus" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CommissionPct" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesYTD" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesLastYear" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SP_PersonType" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_FirstName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_MiddleName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_LastName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="SP_Suffix" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_EmailPromotion" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_AdditionalContactInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_Demographics" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Product_Number" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_MakeFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_FinishedGoodsFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Product_Color" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_SafetyStockLevel" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_ReorderPoint" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_StandardCost" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_ListPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Product_Size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SizeUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Product_Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_WeightUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Product_DaysToManufacture" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Line" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Class" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Style" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellStartDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellEndDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_DiscontinuedDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SubCategory" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Category" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Model" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualSales" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualRevenue" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_BankName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Store_BusinessType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_YearOpened" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Specialty" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_SquareFeet" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Brands" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Internet" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_NumberEmployees" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_AddressType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_City" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_StateProvinceName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Store_PostalCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_CountryRegionName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PercRNK" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_OrderDate" nullable="false" pattern="" precision="0" sourceType="TIMESTAMP" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_DueDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_ShipDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_Status" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Sales_OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Sales_PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Sales_AccountNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_BillToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipMethodID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CreditCardID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Sales_CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CurrencyRateID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_SubTotal" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TaxAmt" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_Freight" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TotalDue" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="Sales_Comment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_CarrierTrackingNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Sales_OrderQty" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ProductID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_SpecialOfferID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPriceDiscount" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Sales_LineTotal" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesQuota" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Bonus" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CommissionPct" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesYTD" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesLastYear" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SP_PersonType" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_FirstName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_MiddleName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_LastName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="SP_Suffix" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_EmailPromotion" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_AdditionalContactInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_Demographics" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Product_Number" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_MakeFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_FinishedGoodsFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Product_Color" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_SafetyStockLevel" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_ReorderPoint" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_StandardCost" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_ListPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Product_Size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SizeUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Product_Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_WeightUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Product_DaysToManufacture" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Line" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Class" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Style" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellStartDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellEndDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_DiscontinuedDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SubCategory" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Category" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Model" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualSales" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualRevenue" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_BankName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Store_BusinessType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_YearOpened" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Specialty" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_SquareFeet" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Brands" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Internet" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_NumberEmployees" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_AddressType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_City" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_StateProvinceName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Store_PostalCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_CountryRegionName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PercRNK" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_OrderDate" nullable="false" pattern="" precision="0" sourceType="TIMESTAMP" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_DueDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_ShipDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_Status" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Sales_OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Sales_PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Sales_AccountNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_BillToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipMethodID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CreditCardID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Sales_CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CurrencyRateID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_SubTotal" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TaxAmt" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_Freight" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TotalDue" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="Sales_Comment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_CarrierTrackingNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Sales_OrderQty" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ProductID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_SpecialOfferID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPriceDiscount" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Sales_LineTotal" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesQuota" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Bonus" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CommissionPct" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesYTD" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesLastYear" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SP_PersonType" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_FirstName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_MiddleName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_LastName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="SP_Suffix" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_EmailPromotion" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_AdditionalContactInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_Demographics" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Product_Number" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_MakeFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_FinishedGoodsFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Product_Color" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_SafetyStockLevel" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_ReorderPoint" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_StandardCost" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_ListPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Product_Size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SizeUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Product_Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_WeightUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Product_DaysToManufacture" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Line" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Class" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Style" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellStartDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellEndDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_DiscontinuedDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SubCategory" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Category" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Model" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualSales" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualRevenue" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_BankName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Store_BusinessType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_YearOpened" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Specialty" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_SquareFeet" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Brands" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Internet" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_NumberEmployees" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_AddressType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_City" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_StateProvinceName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Store_PostalCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_CountryRegionName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="PercRNK" nullable="true" pattern="" precision="0" sourceType="FLOAT" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/9ABD_Conan/Relatorios/Aula3_Exploracao/Treino_Exploracao_DataScience.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="GeraBaseTreino"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_OrderDate" nullable="false" pattern="" precision="0" sourceType="TIMESTAMP" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_DueDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_ShipDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_Status" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Sales_OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Sales_PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Sales_AccountNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_BillToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipMethodID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CreditCardID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Sales_CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CurrencyRateID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_SubTotal" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TaxAmt" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_Freight" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TotalDue" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="Sales_Comment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_CarrierTrackingNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Sales_OrderQty" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ProductID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_SpecialOfferID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPriceDiscount" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Sales_LineTotal" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesQuota" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Bonus" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CommissionPct" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesYTD" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesLastYear" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SP_PersonType" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_FirstName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_MiddleName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_LastName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="SP_Suffix" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_EmailPromotion" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_AdditionalContactInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_Demographics" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Product_Number" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_MakeFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_FinishedGoodsFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Product_Color" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_SafetyStockLevel" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_ReorderPoint" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_StandardCost" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_ListPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Product_Size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SizeUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Product_Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_WeightUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Product_DaysToManufacture" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Line" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Class" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Style" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellStartDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellEndDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_DiscontinuedDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SubCategory" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Category" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Model" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualSales" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualRevenue" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_BankName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Store_BusinessType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_YearOpened" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Specialty" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_SquareFeet" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Brands" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Internet" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_NumberEmployees" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_AddressType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_City" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_StateProvinceName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Store_PostalCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_CountryRegionName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Talend/9ABD_Conan/Relatorios/Aula3_Exploracao/Teste_Exploracao_DataScience.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="GeraBaseTeste"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_OrderDate" nullable="false" pattern="" precision="0" sourceType="TIMESTAMP" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_DueDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Sales_ShipDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Sales_Status" nullable="false" pattern="" precision="0" sourceType="TINYINT UNSIGNED" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Sales_OnlineOrderFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Sales_PurchaseOrderNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Sales_AccountNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CustomerID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesPersonID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_BillToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipToAddressID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ShipMethodID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CreditCardID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Sales_CreditCardApprovalCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_CurrencyRateID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_SubTotal" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TaxAmt" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_Freight" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_TotalDue" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="128" name="Sales_Comment" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SalesOrderDetailID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Sales_CarrierTrackingNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Sales_OrderQty" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_ProductID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Sales_SpecialOfferID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Sales_UnitPriceDiscount" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="38" name="Sales_LineTotal" nullable="false" pattern="" precision="6" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_TerritoryID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesQuota" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Bonus" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CommissionPct" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesYTD" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="SalesLastYear" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="SP_PersonType" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_FirstName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_MiddleName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SP_LastName" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="SP_Suffix" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="SP_EmailPromotion" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_AdditionalContactInfo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="21845" name="SP_Demographics" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="25" name="Product_Number" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_MakeFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Product_FinishedGoodsFlag" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Product_Color" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_SafetyStockLevel" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Product_ReorderPoint" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_StandardCost" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Product_ListPrice" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Product_Size" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SizeUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Product_Weight" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_WeightUnitMeasureName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Product_DaysToManufacture" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Line" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Class" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Product_Style" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellStartDate" nullable="false" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_SellEndDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="Product_DiscontinuedDate" nullable="true" pattern="" precision="0" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_SubCategory" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Category" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Product_Model" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Name" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualSales" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Store_AnnualRevenue" nullable="true" pattern="" precision="4" sourceType="MONEY" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_BankName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="Store_BusinessType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_YearOpened" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_Specialty" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_SquareFeet" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Brands" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_Internet" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Store_NumberEmployees" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_AddressType" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="Store_AddressLine2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Store_City" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_StateProvinceName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="Store_PostalCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Store_CountryRegionName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xA;new java.io.File(context.directoryPath).mkdirs();"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Cria Diretorio"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_2yMZAMxNEeqfHv4ujm0LKQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;DESKTOP-RVEH93Q&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;52890&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;AdventureWorks2014&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IY+A2yjzhRv81JUzgxq5hc6NBZeq3JeB3VaEufYl"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;integratedSecurity=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AdventureWorks2014_SQLSERVER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out_DataExploration" lineStyle="0" metaname="out_DataExploration" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFilterRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out_DataExploration" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row5" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFilterRow_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row6" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFilterRow_1" target="tFileOutputDelimited_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDBConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
