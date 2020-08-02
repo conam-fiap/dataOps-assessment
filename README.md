@@ -25,3 +25,12 @@ Algumas boas práticas adotadas:
   <li>Antes de iniciar, criamos os diretórios necessários para a geração dos arquivos;</li>
   <li>Procuramos utilizar tFilterColumns, para garantir um fluxo mais limpo, com apenas a colunas de interesse;</li>
 </ul>
+
+Para o agendamento da execução dos Jobs, utilizamos o AirFlow, que é uma plataforma de gerenciamento de fluxo de trabalho de código aberto.
+
+Todos os Pipelines foram exportados do talend, e disponibilizados no diretório:
+https://github.com/conam-fiap/dataOps-assessment/tree/master/Pipelines 
+O Airflow, fará a chamada dos pipelines a partir deste caminho.
+
+Armazenamos a DAG nesse diretório: https://github.com/conam-fiap/dataOps-assessment/tree/master/airflow
+
