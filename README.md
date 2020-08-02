@@ -34,3 +34,7 @@ O Airflow, fará a chamada dos pipelines a partir deste caminho.
 
 Armazenamos a DAG nesse diretório: https://github.com/conam-fiap/dataOps-assessment/tree/master/airflow
 
+Para maiores detalhes, acessar a documentação disponível em:
+https://docs.google.com/presentation/d/13ZNTP9w3cedFp-C7GhOv2wSgKSyVvTBp5IUo6hxDulk/edit?usp=sharing
+
+Obrigado!
