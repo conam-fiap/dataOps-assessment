@@ -8,7 +8,7 @@ Realizamos o assessment do banco de dados sample da Microsoft, o AdventureWorks2
   <li>Quais informações estão presentes;</li>
   <li>Como foi feita a normalização;</li>
   <li>Como as informações foram distribuídas, e como se relacionam;</li>
-<ul>
+</ul>
 
 Todos os scripts gerados durante o assessment, foram disponibilizados no diretório:
 https://github.com/conam-fiap/dataOps-assessment/tree/master/Assessment
